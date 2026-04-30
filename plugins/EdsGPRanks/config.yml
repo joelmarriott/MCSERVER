@@ -1,0 +1,32 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                       Notes                          | #
+# +------------------------------------------------------+ #
+############################################################
+
+# This is the config file for EdsGPRanks
+
+############################################################
+# +------------------------------------------------------+ #
+# |                      EdsGPRanks                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Set to true for more logging!
+verbose: true
+
+# If true:
+#   (Test mode) Will not expire claims, only notify in console
+# If false:
+#   Will expire all claims
+check-only: false
+
+# Each list entry (-) is another line in the mail message
+# that the player receives when they have been inactive
+# enough for their claims to expire.
+# Substitution variables:
+#   - $days : Number of expiry days
+expiry-message:
+  - "&c&lYour claims have expired"
+  - "&e&lIt has been over $days days since you have logged in"
+  - "&f&oPlease note: Griefing is not allowed on this server, if you return please raise a ticket in discord for assistance to roll back!"
